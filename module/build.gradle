@@ -1,5 +1,6 @@
-apply plugin: 'com.android.library'
 apply from: 'https://github.com/jybin88/public/raw/master/version.gradle'
+apply plugin: 'com.android.library'
+apply plugin: 'android-apt'
 
 android {
     compileSdkVersion vCompileSdk
@@ -23,5 +24,12 @@ android {
 }
 
 dependencies {
+    compile "com.android.support:appcompat-v7:$vSupportLib"
     compile "com.android.support:support-annotations:$vSupportLib"
+    //dagger
+    apt "com.google.dagger:dagger-compiler:$vDagger2"
+    compile "com.google.dagger:dagger:$vDagger2"
+    //retrofit2
+    compile "com.squareup.retrofit2:retrofit:$vRetrofit"
+    compile "com.squareup.retrofit2:converter-gson:$vConverterGson"
 }

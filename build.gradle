@@ -6,6 +6,7 @@ buildscript {
     dependencies {
         //这一句是Android Studio自带的
         classpath 'com.android.tools.build:gradle:2.2.3'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
     }
 
 }
