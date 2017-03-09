@@ -1,0 +1,21 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        //这一句是Android Studio自带的
+        classpath 'com.android.tools.build:gradle:2.2.3'
+    }
+
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
