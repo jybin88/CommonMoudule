@@ -1,7 +1,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
           package="com.lfh.base.module">
 
     <application android:name=".CustomApplication">
 
+        <meta-data
+            android:name="com.lfh.base.module.glide.GlideConfiguration"
+            android:value="GlideModule"
+            tools:node="remove"/>
     </application>
 </manifest>
